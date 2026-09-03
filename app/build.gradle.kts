@@ -5,6 +5,7 @@ plugins {
     alias(libs.plugins.hilt.android)
     alias(libs.plugins.ksp)
     alias(libs.plugins.compose.compiler)
+    alias(libs.plugins.ktlint)
 }
 
 android {
@@ -31,7 +32,7 @@ android {
             isShrinkResources = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
+                "proguard-rules.pro",
             )
         }
     }
@@ -77,6 +78,7 @@ dependencies {
     // Room Database
     implementation(libs.androidx.room.runtime)
     implementation(libs.androidx.room.ktx)
+    androidTestImplementation(libs.junit.jupiter)
     ksp(libs.androidx.room.compiler)
 
     // Hilt DI
@@ -86,4 +88,8 @@ dependencies {
     // Serialization & Coroutines
     implementation(libs.kotlinx.serialization.protobuf)
     implementation(libs.kotlinx.coroutines.android)
+}
+ktlint {
+    android.set(true)
+    outputToConsole.set(true)
 }
