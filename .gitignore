@@ -1,0 +1,66 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+# Gradle & Build Artifacts
+.gradle/
+build/
+*/build/
+gradle-app.setting
+!gradle-wrapper.jar
+
+# Local Configuration (Sensitive / Environment Specific)
+local.properties
+*.jks
+*.keystore
+keystore.properties
+
+# Android Studio / IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/assetWizardSettings.xml
+.idea/dictionaries
+.idea/libraries
+.idea/caches
+.idea/modules.xml
+.idea/vcs.xml
+.idea/navEditor.xml
+.idea/runConfigurations.xml
+
+# Android specific
+/captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.ap_
+*.aab
+*.dex
+*.class
+
+# KSP / Hilt / Room Generated Code
+# (Usually caught by build/ but added for safety in custom configurations)
+generated/
+
+# OS Specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
